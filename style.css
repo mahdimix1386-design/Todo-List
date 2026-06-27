@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    transition: all .5s;
+    
+}
+body{
+    background-color: rgb(53, 53, 53);
+}
+.light{
+    background-color: rgb(198, 43, 255);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head{
+    color: aliceblue;
+    font-size: xx-large;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: rgb(193, 126, 255);
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.btn-light{
+    background-color: rgb(53, 53, 53);
+    color: aliceblue;
+}
+.foot{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+}
+.inp{
+    outline: none;
+    border: none;
+    padding:1rem;
+    width: 90%;
+    cursor: auto;
+}
+.add{
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(95, 95, 95);
+}
+html,body,*{
+    user-select: none;
+}
+.task{
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.icon{
+    user-select: none;
+}
+.title-task{
+    font-size:16px;
+    user-select: none;
+}
+.remove img:hover,
+.done img:hover{
+    cursor: pointer;
+}
+
+.alert{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 2s;
+    background-color: aqua;
+    padding: 1rem;
+    left: -120rem;
+    border-radius: 10px;
+}
+.faild{
+    background-color: rgb(216, 48, 48);
+    left: 0;
+}
+.succes{
+    background-color: rgb(136, 20, 245);
+    left: 0;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    min-width: 50%;
+    padding: 1rem;
+    background-color: aliceblue;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: move;
+    font-weight: bolder;
+}
+.drag{
+    opacity: .5;
+    transition: all .5s ;
+}
+.under{
+    opacity: .5;
+    color: black;
+    transition: all .4s;
+}
+.under p{
+    transition: all .4s;
+    text-decoration: line-through;
+    color: black;
+}
+.fall{
+    /* visibility: hidden; */
+    display: none;
+}
+#done input{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+input{
+    cursor: pointer;
+}
