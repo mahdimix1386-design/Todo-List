@@ -97,7 +97,7 @@ function makeElement(array) {
 
     //set attribute
 
-    img1.setAttribute("src", "/image/remove-filled-svgrepo-com.svg");
+    img1.setAttribute("src", "image/remove-filled-svgrepo-com.svg");
     input.setAttribute("type", "checkbox");
     divElement.setAttribute("draggable", true);
     span1.setAttribute("id", "remove");
